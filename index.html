@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday Seng 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎂 Happy Birthday Seng 🎂</h1>
+    <nav>
+      <button data-tab="stories">Stories</button>
+      <button data-tab="pics">Pictures</button>
+      <button data-tab="videos">Videos</button>
+      <button data-tab="game">Mini Game</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="stories" class="tab active">
+      <p id="storyText">Tap to see messages 💖</p>
+    </section>
+
+    <section id="pics" class="tab">
+      <h2>Pictures 📸</h2>
+      <div id="imageGrid"></div>
+    </section>
+
+    <section id="videos" class="tab">
+      <h2>Videos 🎬</h2>
+      <div id="videoGrid"></div>
+    </section>
+
+    <section id="game" class="tab">
+      <h2>Mini Game 🎈</h2>
+      <button id="startGame">Start</button>
+      <div id="arena"></div>
+      <p>Score: <span id="score">0</span></p>
+    </section>
+  </main>
+
+  <canvas id="confetti"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
