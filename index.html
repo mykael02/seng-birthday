@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday Seng 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎂 Happy Birthday Seng 🎂</h1>
+    <nav>
+      <button data-tab="stories">Stories</button>
+      <button data-tab="pics">Pictures</button>
+      <button data-tab="videos">Videos</button>
+      <button data-tab="game">Mini Game</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="stories" class="tab active">
+      <div id="storyViewer" class="story-viewer" aria-label="Stories">
+        <div id="storyProgress" class="story-progress" aria-hidden="true"></div>
+
+        <div class="story-header">
+          <div class="story-avatar">🎂</div>
+          <div class="story-meta">
+            <div class="story-name">Seng</div>
+            <div id="storyTime" class="story-time">now</div>
+          </div>
+        </div>
+
+        <div id="storyContent" class="story-content">
+          <!-- slides injected by JS -->
+        </div>
+
+        <!-- invisible tap zones -->
+        <button id="tapLeft" class="story-tap story-tap-left" aria-label="Previous story"></button>
+        <button id="tapRight" class="story-tap story-tap-right" aria-label="Next story"></button>
+      </div>
+
+      <p class="story-hint">Tap right/left • Hold to pause • Swipe</p>
+    </section>
+
+    <section id="pics" class="tab">
+      <h2>Pictures 📸</h2>
+
+      <!-- BIG CAROUSEL -->
+      <div class="carousel" id="imageCarousel" aria-label="Picture carousel">
+        <button class="car-btn prev" type="button" aria-label="Previous image">‹</button>
+
+        <div class="car-viewport">
+          <div class="car-track" id="carTrack">
+            <!-- slides injected by JS -->
+          </div>
+        </div>
+
+        <button class="car-btn next" type="button" aria-label="Next image">›</button>
+      </div>
+
+      <div class="car-dots" id="carDots" aria-label="Carousel dots"></div>
+    </section>
+
+    <section id="videos" class="tab">
+      <h2>Videos 🎬</h2>
+      <div id="videoGrid"></div>
+    </section>
+
+    <section id="game" class="tab">
+      <h2>Mini Game 🎈</h2>
+      <button id="startGame">Start</button>
+      <div id="arena"></div>
+      <p>Score: <span id="score">0</span></p>
+    </section>
+  </main>
+
+  <canvas id="confetti"></canvas>
+
+  <!-- Tabs in a separate file -->
+  <script src="tabs.js"></script>
+
+  <!-- Everything else -->
+  <script src="script.js"></script>
+</body>
+</html>
