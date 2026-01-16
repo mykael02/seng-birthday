@@ -1,6 +1,0 @@
-body{font-family:sans-serif;text-align:center;background:#111;color:white}
-nav button{margin:5px;padding:10px}
-.tab{display:none}
-.tab.active{display:block}
-#imageGrid img{width:150px;margin:10px;border-radius:10px}
-video{width:90%;max-width:320px;margin:10px}
